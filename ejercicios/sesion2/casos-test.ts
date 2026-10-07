@@ -1,7 +1,7 @@
 interface CasoDeTest {
 id: number;
 titulo: string;
-prioridad: Prioridad;
+prioridad: string;
 ejecutado: boolean;
 }
 
@@ -35,7 +35,7 @@ function obtenerCasosDeTest(): Promise<CasoDeTest[]> {
 }
 
 function formatearCasoDeTest(caso: CasoDeTest): string {
-  const estado = caso.ejecutado ? 'Ejecutado' : 'Pendiente';
+  const estado = caso.ejecutado ? "Ejecutado" : "Pendiente";
   return `[ID: ${caso.id}] ${caso.titulo} | Prioridad: ${caso.prioridad} | Estado: ${estado}`;
 }
 
