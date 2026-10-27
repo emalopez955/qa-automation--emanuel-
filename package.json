@@ -20,5 +20,8 @@
   "homepage": "https://github.com/emalopez955/qa-automation--emanuel-#readme",
   "devDependencies": {
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.64.1"
   }
 }
